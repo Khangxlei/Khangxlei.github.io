@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgba(161, 148, 27, 0.288);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    max-width: 900px;
+    min-height: 900px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.container .basicInfo{
+    position: relative;
+    background: black;
+    padding: 50px;
+}
+
+
+.container .advancedInfo{
+    position: relative;
+    background: white;
+    padding: 50px;
+}
+
+.basicInfoText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 30px;
+    border-bottom: 5px solid bisque;
+    padding-top: 5px;
+}
+
+.basicInfoText .ProfilePic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.basicInfoText .ProfilePic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.basicInfoText h2 {
+    padding-top: 15px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    
+}
+
+.basicInfoText h2 span {
+    font-weight: 350;
+    font-size: 0.5em;
+    padding-top: 20px;
+   
+}
+
+h3 {
+    color: white;
+}
+
+.basicInfo .ContactInfo{
+    position: relative;
+    padding: 20px 1px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.basicInfo .ContactInfo ul li{
+    position: relative; 
+    list-style: none;
+    margin-top: 15px;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+
+.basicInfo .ContactInfo ul li span{
+    font-weight: 300;
+}
+
+.basicInfo .ContactInfo .icon {
+    cursor: pointer;
+    font-size: 15px;
+    color: bisque;
+}
+
+.basicInfo .ContactInfo .text{
+    margin-left: 7.5px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.ContactInfo .text a{
+    color: white;
+    margin-left: 7.5px;
+    font-weight: 300;
+}
+
+
+.ContactInfo.Education ul li {
+    margin-bottom: 20px;
+    margin-right: 0px;
+}
+
+.ContactInfo.Education ul li h5{
+    color: bisque;
+    padding-top: 10px;
+}
+
+.ContactInfo.Education ul li h4{
+    padding-top: 10px;
+}
+
+.ContactInfo.Education .school{
+    font-weight: 300;
+}
+
+.advancedInfo .about h2{
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.advancedInfo .about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.advancedInfo .about .box .projectInfo {
+    min-width: 125px;
+}
+
+.advancedInfo .about .box .projectInfo .yearNum{
+    color: gray;
+    font-weight:700;
+}
+
+.box .projectName .text {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.profSkills .box h4{
+    min-width: 200px;
+}
+
+.profSkills .box .percent{
+    position: relative;
+    margin-top: 7px;
+    width: 100%;
+    height: 10px;
+    
+    background-color: gray;
+    display: block;
+}
+
+.profSkills .box .percent div{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: blue;
+}
